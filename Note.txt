@@ -3,7 +3,11 @@ GraphQL With React Tutorial - Apollo Client (https://www.youtube.com/watch?v=YyU
 https://github.com/machadop1407/GraphQL-ApolloClient-Template
 https://github.com/Annie-Huang/GraphQL-ApolloClient-Template
 
+This is 2020 tutorial, syntax has changed since then.
 -----------------------------------------------------------------------------
 
 PS C:\react\GraphQL-ApolloClient-Template> npx create-react-app client --use-npm
 PS C:\react\GraphQL-ApolloClient-Template\client> npm install @apollo/client graphql
+
+PS C:\react\GraphQL-ApolloClient-Template\server> node index
+http://localhost:6969/graphql
