@@ -8,6 +8,7 @@ import {
 } from '@apollo/client';
 import { onError } from '@apollo/client/link/error';
 import Users from './components/Users';
+import Form from './components/Form';
 
 const errorLink = onError(({ graphQLErrors, networkError }) => {
   if (graphQLErrors) {
@@ -32,6 +33,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Users />
+      <Form />
     </ApolloProvider>
   );
 }
