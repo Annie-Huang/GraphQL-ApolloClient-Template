@@ -6,7 +6,9 @@ const Users = () => {
   const { error, loading, data } = useQuery(LOAD_USERS);
   console.log(data);
 
-  return <div></div>;
+  return (
+    <div>{data?.getAllUsers && <h1>{data?.getAllUsers[0].firstName}</h1>}</div>
+  );
 };
 
 export default Users;
