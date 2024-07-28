@@ -1,5 +1,11 @@
 import './App.css';
-import { ApolloClient, from, HttpLink, InMemoryCache } from '@apollo/client';
+import {
+  ApolloClient,
+  ApolloProvider,
+  from,
+  HttpLink,
+  InMemoryCache,
+} from '@apollo/client';
 import { onError } from '@apollo/client/link/error';
 
 const errorLink = onError(({ graphQLErrors, networkError }) => {
@@ -22,7 +28,7 @@ const client = new ApolloClient({
 });
 
 function App() {
-  return <></>;
+  return <ApolloProvider client={client}></ApolloProvider>;
 }
 
 export default App;
