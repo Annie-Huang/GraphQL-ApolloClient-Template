@@ -7,6 +7,7 @@ import {
   InMemoryCache,
 } from '@apollo/client';
 import { onError } from '@apollo/client/link/error';
+import Users from './components/Users';
 
 const errorLink = onError(({ graphQLErrors, networkError }) => {
   if (graphQLErrors) {
@@ -28,7 +29,11 @@ const client = new ApolloClient({
 });
 
 function App() {
-  return <ApolloProvider client={client}></ApolloProvider>;
+  return (
+    <ApolloProvider client={client}>
+      <Users />
+    </ApolloProvider>
+  );
 }
 
 export default App;

@@ -8,6 +8,8 @@ This is 2020 tutorial, syntax has changed since then.
 
 PS C:\react\GraphQL-ApolloClient-Template> npx create-react-app client --use-npm
 PS C:\react\GraphQL-ApolloClient-Template\client> npm install @apollo/client graphql
+PS C:\react\GraphQL-ApolloClient-Template\client> npm run start
+http://localhost:3000/
 
-PS C:\react\GraphQL-ApolloClient-Template\server> node index
+PS C:\react\GraphQL-ApolloClient-Template\server> node index.js
 http://localhost:6969/graphql
