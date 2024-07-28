@@ -5,4 +5,4 @@ https://github.com/Annie-Huang/GraphQL-ApolloClient-Template
 
 -----------------------------------------------------------------------------
 
-
+PS C:\react\GraphQL-ApolloClient-Template> npx create-react-app client --use-npm
